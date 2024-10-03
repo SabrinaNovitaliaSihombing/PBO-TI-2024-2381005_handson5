@@ -22,7 +22,6 @@ public class Main {
     public static void addTodoList(String todo) {
         resizeArrayIfFull();
 
-
         for (int i =  0; i <todos.length; i++) {
             if (todos[i] == null) {
                 todos[i] = todo;
@@ -116,7 +115,7 @@ public class Main {
                     showMenuRemoveTodoList();
                     break;
                 case "3":
-                    // showMenuAddToDoList();
+                    showMenuEditTodoList();
                     break;
                 case "4":
                     isRunning = false;
